@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rithish Kasagoni Poultry Farms</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: yellow;
-            color: black;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rithish Kasagoni Poultry Farms</title>
 
-        header {
-            background-color: #ffd700;
-            padding: 30px;
-            border-bottom: 4px solid black;
-        }
+<style>
+body{
+    margin:0;
+    background:yellow;
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
 
-        h1 {
-            margin: 0;
-            font-size: 48px;
-        }
+header{
+    text-align:center;
+    background:#ffd700;
+    color:black;
+    padding:20px;
+    border-bottom:4px solid black;
+}
 
-        h2 {
-            margin-top: 10px;
-            font-size: 30px;
-        }
+h1{
+    margin:0;
+    font-size:40px;
+}
 
-        .farm {
-            padding: 40px;
-        }
+h2{
+    margin-top:10px;
+    color:black;
+}
 
-        .hens {
-            font-size: 80px;
-            margin: 20px 0;
-        }
+.farm{
+    position:relative;
+    height:80vh;
+}
 
-        .contact {
-            margin-top: 30px;
-            font-size: 24px;
-            font-weight: bold;
-            border: 2px solid black;
-            display: inline-block;
-            padding: 15px 25px;
-        }
-    </style>
+.hen{
+    position:absolute;
+    font-size:60px;
+    animation:walk 12s linear infinite;
+}
+
+.hen:nth-child(1){ top:80px; animation-duration:10s; }
+.hen:nth-child(2){ top:160px; animation-duration:12s; }
+.hen:nth-child(3){ top:240px; animation-duration:14s; }
+.hen:nth-child(4){ top:320px; animation-duration:11s; }
+.hen:nth-child(5){ top:400px; animation-duration:13s; }
+.hen:nth-child(6){ top:480px; animation-duration:15s; }
+
+@keyframes walk{
+    from{
+        left:-100px;
+    }
+    to{
+        left:100%;
+    }
+}
+
+.info{
+    text-align:center;
+    color:black;
+    font-size:22px;
+    margin-top:20px;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>RITHISH KASAGONI</h1>
-        <h2>POULTRY FARMS</h2>
-    </header>
+<header>
+    <h1>RITHISH KASAGONI</h1>
+    <h2>Poultry Farms</h2>
+</header>
 
-    <div class="farm">
-        <div class="hens">🐔 🐔 🐔</div>
+<div class="info">
+    Fresh & Healthy Poultry Farm
+</div>
 
-        <h3>Welcome to Rithish Kasagoni Poultry Farms</h3>
-
-        <p>
-            We provide healthy hens and quality poultry farming services.
-        </p>
-
-        <div class="contact">
-            Contact: 7793937933
-        </div>
-    </div>
+<div class="farm">
+    <div class="hen">🐔</div>
+    <div class="hen">🐔</div>
+    <div class="hen">🐔</div>
+    <div class="hen">🐔</div>
+    <div class="hen">🐔</div>
+    <div class="hen">🐔</div>
+</div>
 
 </body>
 </html>
